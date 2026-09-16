@@ -12,7 +12,7 @@ brew install --cask kplr-app/tap/kepler@beta
 
 The cask installs `Kepler.app`. If you already have Kepler installed, stop and decide how to migrate that installation first. Don't use `--force` to overwrite it. Beta and stable builds use the same app name and aren't side-by-side installations.
 
-The pinned release is **0.8.4, build 42, beta**. This tap provides no stable cask. Its download URL explicitly ends in `-beta.dmg`; it never uses `https://updates.kplr.space/Kepler.dmg`, which can switch between beta and stable.
+The pinned release is **0.8.5, build 43, beta**. This tap provides no stable cask. Its download URL explicitly ends in `-beta.dmg`; it never uses `https://updates.kplr.space/Kepler.dmg`, which can switch between beta and stable.
 
 Kepler installs updates through Sparkle, so the cask declares `auto_updates true`. This describes the app's update capability, not unattended installation: Sparkle's automatic checks are disabled and Kepler drives checks itself. The app's update-channel settings remain separate from Homebrew; this cask doesn't change them or guarantee that later in-app updates stay on beta.
 
@@ -45,5 +45,5 @@ brew upgrade --cask --greedy kplr-app/tap/kepler@beta
 ## Metadata sources
 
 - [Kepler homepage](https://kplr.space/) and [published appcast](https://updates.kplr.space/appcast.xml).
-- [Pinned beta DMG](https://updates.kplr.space/releases/Kepler-0.8.4-42-beta.dmg) (download): SHA-256 `cddb71fe0259cdd601f6d0607d29bf6bd687476ebc2f2db48f3462dc8d654d7b`. Bundle metadata and executable architectures verified directly.
+- [Pinned beta DMG](https://updates.kplr.space/releases/Kepler-0.8.5-43-beta.dmg) (download): SHA-256 `1e0a708029a1341c0ea50eab6e1a0faedb11e0f8c9cf0086ba118b9cf5fafd93`. Bundle metadata and executable architectures verified directly.
 - [Homebrew Cask cookbook](https://docs.brew.sh/Cask-Cookbook) for the DSL and `auto_updates`; [Homebrew manual](https://docs.brew.sh/Manpage) for upgrade flags. Validation used Homebrew 7.0.1, including its installed DSL source for major-only macOS requirements.

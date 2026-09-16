@@ -1,6 +1,6 @@
 cask "kepler@beta" do
-  version "0.8.4,42"
-  sha256 "cddb71fe0259cdd601f6d0607d29bf6bd687476ebc2f2db48f3462dc8d654d7b"
+  version "0.8.5,43"
+  sha256 "1e0a708029a1341c0ea50eab6e1a0faedb11e0f8c9cf0086ba118b9cf5fafd93"
 
   url "https://updates.kplr.space/releases/Kepler-#{version.csv.first}-#{version.csv.second}-beta.dmg"
   name "Kepler Beta"
